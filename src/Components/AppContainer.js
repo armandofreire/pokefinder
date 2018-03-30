@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as ReactRedux from 'react-redux';
 
-import { setItems, setPokemonDetails, listPokemons } from '../Redux/modules/reducer';
+import { setPokemonDetails, listPokemons } from '../Redux/modules/reducer';
 
 import App from './App';
 
@@ -16,7 +16,6 @@ class AppContainer extends Component {
 const mapStateToProps = state => (state);
 
 const mapDispatchToProps = {
-  setItems,
   setPokemonDetails,
   listPokemons,
 };

@@ -10,7 +10,7 @@ const PokemonDetails = ({ pokemonDetails }) => (
     {
     !pokemonDetails ?
       <div className="text-center pokeloading">
-        <h4>Só um instante enquanto capturamos o Pokémon</h4>
+        <h4>Estamos capturando o Pokémon selecionado</h4>
         <p><img src={pikachu} alt="loading" /></p>
       </div>
     :
