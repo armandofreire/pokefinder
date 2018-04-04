@@ -9,7 +9,7 @@ describe('resultItem.test.js', () => {
   beforeEach(() => {
     const history = createBrowserHistory();
 
-    sWrapper = <Template history={history} setItems={() => {}} />;
+    sWrapper = <Template history={history} />;
   });
 
   it('renders without crashing', () => {

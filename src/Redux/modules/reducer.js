@@ -33,13 +33,6 @@ export default function reducer(state = initialState, action) {
   }
 }
 
-export function setItems(payload) {
-  return {
-    type: 'SET_ITEMS',
-    payload,
-  };
-}
-
 export function clearPokemonDetails() {
   return { type: 'CLEAR_POKEMON_DETAILS' };
 }
