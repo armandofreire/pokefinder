@@ -13,3 +13,8 @@ Projeto bootstrapped com Create React App
 
 - npm install
 - npm start
+
+## tests
+- npm install
+- npm test
+- npm run test:coverage

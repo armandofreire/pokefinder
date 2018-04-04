@@ -1,9 +1,6 @@
 const initialState = {
   pokemonList: [],
-  currentSearch: null,
-  productList: [],
   pokemonDetails: false,
-  currentView: null,
 };
 
 export default function reducer(state = initialState, action) {
@@ -18,14 +15,12 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         pokemonList: action.payload,
-        currentView: 'pokemonList',
       };
 
     case 'SET_POKEMON_DETAILS':
       return {
         ...state,
         pokemonDetails: action.payload,
-        currentView: 'pokemonDetails',
       };
 
     default:

@@ -14,13 +14,14 @@ describe('PokemonDetails.test.js', () => {
   });
 
   it('should render a loading if no pokemonDetails', () => {
-    expect(shallow(<PokemonDetails pokemonDetails={false} />).find('.pokeloading').exists()).toBe(true);
+    const renderedComponent = shallow(<PokemonDetails />);
+    expect(renderedComponent.children().render().find('.pokeloading')).toBeTruthy();
   });
 
   it('should render a stat if pokemonDetails.stats is not empty', () => {
     const mockStat = {
       stat: { name: 'Super skill' },
-      base_stat: '50',
+      base_stat: 50,
     };
 
     const updatedPokemonDetails = {
