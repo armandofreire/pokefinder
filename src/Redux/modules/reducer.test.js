@@ -1,4 +1,4 @@
-import { listPokemons } from './reducer';
+import { listPokemons, clearPokemonDetails } from './reducer';
 
 describe('Redux actions', () => {
   it('Should add a Pokemon to pokemonList', () => {
@@ -15,5 +15,13 @@ describe('Redux actions', () => {
     };
 
     expect(listPokemons(payload)).toEqual(expectedAction);
+  });
+
+  it('Should clear pokemon details', () => {
+    const expectedAction = {
+      type: 'CLEAR_POKEMON_DETAILS',
+    };
+
+    expect(clearPokemonDetails(expectedAction)).toEqual(expectedAction);
   });
 });

@@ -17,7 +17,6 @@ class SearchBar extends Component {
   }
 
   _search() {
-    console.log(this.props);
     this.props.history.push({ pathname: `/details/${this.state.query}`, query: { pokemonId: this.state.query } });
   }
 
