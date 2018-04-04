@@ -21,7 +21,7 @@ class ResultList extends Component {
         {
         this.props.pokemonList.length === 0 ?
           <div className="text-center pokeloading">
-            <h4>Estamos capturando alguns Pokémons</h4>
+            <h4>Aguarde enquanto capturamos os Pokémons</h4>
             <p><img src={pidgeot} alt="loading" /></p>
           </div>
         :

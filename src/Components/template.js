@@ -6,7 +6,10 @@ import './App.css';
 
 const Template = props => (
   <div>
-    <SearchBar history={props.history} />
+    <SearchBar
+      history={props.history}
+      setItems={props.setItems}
+    />
     <div className="container pk-container">
       { props.children }
     </div>
